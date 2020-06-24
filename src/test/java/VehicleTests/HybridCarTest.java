@@ -17,7 +17,7 @@ public class HybridCarTest {
     public void before(){
         engine = new Engine("petrol", 6);
         battery = new Battery("JMBS", 2000);
-        car = new HybridCar(engine, battery);
+        car = new HybridCar(engine, battery, "teal", 25000);
     }
 
     @Test
@@ -27,6 +27,16 @@ public class HybridCarTest {
 
     @Test
     public void hasBattery(){
-        ass
+        assertEquals(battery, car.getBattery());
+    }
+
+    @Test
+    public void hasColour(){
+        assertEquals("teal", car.getColour());
+    }
+
+    @Test
+    public void hasPrice(){
+        assertEquals(25000, car.getPrice());
     }
 }
