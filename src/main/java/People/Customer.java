@@ -1,6 +1,8 @@
 package People;
 
-import Vehicles.IVehicles;
+import Vehicles.IVehicle;
+
+import java.util.ArrayList;
 
 public class Customer {
 
@@ -9,10 +11,14 @@ public class Customer {
 
     public Customer(int money){
         this.money = money;
-        collection = new ArrayList<IVehicle>();
+        this.collection = new ArrayList<IVehicle>();
     }
 
     public int getMoney(){
         return this.money;
+    }
+
+    public int carCount(){
+        return this.collection.size();
     }
 }

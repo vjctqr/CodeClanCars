@@ -22,7 +22,7 @@ public class ElectricCarTest {
 
     @Test
     public void hasBattery(){
-        assertEquals(battery car.getBattery());
+        assertEquals(battery, car.getBattery());
     }
 
     @Test
@@ -32,7 +32,7 @@ public class ElectricCarTest {
 
     @Test
     public void hasColour(){
-        assertEquals("yellow", car.getColour())
+        assertEquals("yellow", car.getColour());
     }
 
     @Test
