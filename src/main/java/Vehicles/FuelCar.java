@@ -2,7 +2,7 @@ package Vehicles;
 
 import Components.Engine;
 
-public class FuelCar {
+public class FuelCar implements IVehicle{
     private Engine engine;
     private String colour;
     private int price;
