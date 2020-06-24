@@ -10,4 +10,12 @@ public class Battery {
         this.power = power;
     }
 
+    public String getManufacturer(){
+        return this.manufacturer;
+    }
+
+    public int getPower(){
+        return this.power;
+    }
+
 }
