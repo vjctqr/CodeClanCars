@@ -1,15 +1,14 @@
 package Vehicles;
 
-import Vehicles.ElectricCar;
 import Components.Battery;
-import org.junit.Before;
 
-public class ElectricCar {
-    private ElectricCar car;
+public class ElectricCar IVehicle {
     private Battery battery;
+    private int power;
+    private String colour;
+    private int price;
 
-    @Before
-    public void before
+
 
 
 }
