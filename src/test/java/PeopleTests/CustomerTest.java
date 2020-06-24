@@ -15,7 +15,6 @@ public class CustomerTest {
     private Engine engine;
     private Battery battery;
     private HybridCar hybridCar;
-    private FuelCar fuelCar;
     private Customer customer;
 
 
@@ -23,7 +22,6 @@ public class CustomerTest {
     public void before(){
         engine = new Engine("petrol", 250);
         battery = new Battery("JMBS", 2300);
-        fuelCar = new FuelCar(engine, "green", 10000);
         hybridCar = new HybridCar(engine, battery, "blue", 30000);
         customer = new Customer(16000);
     }
@@ -34,7 +32,21 @@ public class CustomerTest {
     }
 
     @Test
-    public void hasNoCars(){
+    public void hasNoCarsAtStart(){
         assertEquals(0, customer.carCount());
     }
+
+    @Test
+    public void canAddCarToCollection(){
+        customer.addCar(hybridCar);
+        assertEquals(1, customer.carCount());
+    }
+
+    @Test
+    public void canRemoveCarFromCollection(){
+        customer.addCar(hybridCar);
+        customer.removeCar(hybridCar);
+        assertEquals(0, customer.carCount());
+    }
+
 }

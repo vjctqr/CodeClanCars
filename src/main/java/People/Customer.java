@@ -21,4 +21,13 @@ public class Customer {
     public int carCount(){
         return this.collection.size();
     }
+
+    public void addCar(IVehicle vehicle){
+        collection.add(vehicle);
+    }
+
+    public void removeCar(IVehicle vehicle){
+       int index = collection.indexOf(vehicle);
+       collection.remove(index);
+    }
 }
