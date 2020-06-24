@@ -22,11 +22,15 @@ public class FuelCarTest {
         engine = new Engine("petrol", 200);
         tyre = new Tyres("Slick", 33);
         tryes = new ArrayList<Tyres>();
-        tryes
+        tryes.add(tyre);
+        tyres.add(tyre);
+        tyres.add(tyre);
+        tyres.add(tyre);
+        car = new FuelCar(engine, tyres);
     }
 
     @Test
-    public void test(){
+    public void canGetEngi(){
         assertEquals();
     }
 }
