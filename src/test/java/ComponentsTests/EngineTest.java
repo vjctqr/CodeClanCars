@@ -1,5 +1,6 @@
 package ComponentsTests;
 
+import Components.Engine;
 import org.junit.Before;
 import org.junit.Test;
 

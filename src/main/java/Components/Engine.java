@@ -14,6 +14,6 @@ public class Engine {
     }
 
     public int getHorsePower(){
-        return this
+        return this.horsePower;
     }
 }

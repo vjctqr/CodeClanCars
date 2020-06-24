@@ -1,21 +1,22 @@
 package ComponentsTests;
 
+import Components.Tyres;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TyresTest
-    private Tyre tyre;
+public class TyresTest{
+    private Tyres tyre;
 
     @Before
     public void before(){
-        tyre = new Tyre("Slick", 33);
+        tyre = new Tyres("Slick", 33);
     }
 
     @Test
     public void canGetTreadType(){
-        assertEquals("Slick", tyre.getTreadType);
+        assertEquals("Slick", tyre.getTreadType());
     }
 
     @Test
