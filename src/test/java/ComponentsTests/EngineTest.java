@@ -15,8 +15,8 @@ public class EngineTest{
     }
     
     @Test
-    public void test(){
-        assertEquals("petrol", engine.get);
+    public void canGetFuelType(){
+        assertEquals("petrol", engine.getFuelType());
     }
 
 }
