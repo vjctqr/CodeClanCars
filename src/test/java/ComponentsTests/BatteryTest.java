@@ -20,5 +20,10 @@ public class BatteryTest {
         assertEquals("APC", battery.getManufacturer());
     }
 
+    @Test
+    public void canGetPower(){
+        assertEquals(5000, battery.getPower());
+    }
+
 
 }
