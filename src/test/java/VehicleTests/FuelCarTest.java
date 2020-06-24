@@ -27,7 +27,7 @@ public class FuelCarTest {
 
     @Test
     public void hasColour(){
-        assertEquals("red", car.getColour())
+        assertEquals("red", car.getColour());
     }
 
     @Test
