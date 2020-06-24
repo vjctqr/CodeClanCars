@@ -2,7 +2,7 @@ package Vehicles;
 
 import Components.Battery;
 
-public class ElectricCar IVehicle {
+public class ElectricCar implements IVehicle {
     private Battery battery;
     private int power;
     private String colour;
@@ -10,13 +10,24 @@ public class ElectricCar IVehicle {
 
     public ElectricCar(Battery battery,int power, String colour, int price){
         this.battery = battery;
-        this.colour = colour;
         this.power = power;
+        this.colour = colour;
         this.price = price;
     }
 
-    public Battery getbattery(){
+    public Battery getBattery(){
         return this.battery;
     }
 
+    public int getPower() {
+        return power;
+    }
+
+    public String getColour() {
+        return this.colour;
+    }
+
+    public int getPrice() {
+        return 30000;
+    }
 }
