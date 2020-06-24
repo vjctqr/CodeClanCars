@@ -17,11 +17,21 @@ public class FuelCarTest {
     @Before
     public void before(){
         engine = new Engine("petrol", 200);
-        car = new FuelCar(engine);
+        car = new FuelCar(engine, "red", 14000);
     }
 
     @Test
-    public void hasEngine(){
+    public void hasEngine() {
         assertEquals(engine, car.getEngine());
+    }
+
+    @Test
+    public void hasColour(){
+        assertEquals("red", car.getColour())
+    }
+
+    @Test
+    public void hasPrice(){
+        assertEquals(14000, car.getPrice());
     }
 }
