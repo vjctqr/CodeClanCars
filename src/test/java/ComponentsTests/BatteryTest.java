@@ -13,6 +13,9 @@ public class BatteryTest {
     }
 
     @Test
-    public void getManufacturer
+    public void canGetManufacturer(){
+        assertEquals("APC", battery.getManufacturer());
+    }
+
 
 }

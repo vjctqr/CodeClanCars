@@ -11,12 +11,17 @@ public class EngineTest{
 
     @Before
     public void before(){
-        engine = new Engine("petrol");
+        engine = new Engine("petrol", 150);
     }
     
     @Test
     public void canGetFuelType(){
         assertEquals("petrol", engine.getFuelType());
+    }
+
+    @Test
+    public void canGetHorsePower(){
+        assertEquals(150, engine.getHorsePower());
     }
 
 }
